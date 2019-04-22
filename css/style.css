@@ -264,19 +264,26 @@ textarea {
 
 .service-image-div {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
 .s-image {
-  width: 45%;
+  width: 50%;
   height: auto;
   margin: 15px;
 }
 
-.s-desript {
-  width: 45%;
+.s-descript {
+  width: 50%;
   margin: 15px;
+}
+
+.s-descript h3 {
+  text-align: left;
+}
+
+.service-buttons {
 }
 
 .s1-des {
@@ -439,17 +446,17 @@ background-blend-mode: initial;
 .four {
   /*background-image: url('images-css/TKRSS.png');*/
   background-color: OrangeRed;
-  grid-column-start:4;
-  grid-column-end: 5;
-  grid-row-start: 1;
-  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
 
 .five {
   /*background-image: url('images-css/TKRSS.png');*/
   background-color: purple;
-  grid-column-start: 1;
-  grid-column-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 3;
 }
@@ -457,31 +464,13 @@ background-blend-mode: initial;
 .six {
   /*background-image: url('images-css/TKRSS.png');*/
   background-color: green;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
-}
-
-.seven {
-  /*background-image: url('images-css/TKRSS.png');*/
-  background-color: green;
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 3;
 }
 
-.eight {
-  /*background-image: url('images-css/TKRSS.png');*/
-  background-color: green;
-  grid-column-start: 4;
-  grid-column-end: 5;
-  grid-row-start: 2;
-  grid-row-end: 3;
-}
-
-.nine {
+.seven {
   /*background-image: url('images-css/TKRSS.png');*/
   background-color: green;
   grid-column-start: 1;
@@ -490,7 +479,7 @@ background-blend-mode: initial;
   grid-row-end: 4;
 }
 
-.ten {
+.eight {
   /*background-image: url('images-css/TKRSS.png');*/
   background-color: green;
   grid-column-start: 2;
@@ -499,20 +488,11 @@ background-blend-mode: initial;
   grid-row-end: 4;
 }
 
-.eleven {
+.nine {
   /*background-image: url('images-css/TKRSS.png');*/
   background-color: green;
   grid-column-start: 3;
   grid-column-end: 4;
-  grid-row-start: 3;
-  grid-row-end: 4;
-}
-
-.twelve {
-  /*background-image: url('images-css/TKRSS.png');*/
-  background-color: green;
-  grid-column-start: 4;
-  grid-column-end: 5;
   grid-row-start: 3;
   grid-row-end: 4;
 }
@@ -548,7 +528,7 @@ background-blend-mode: initial;
   width: 90%;
 }
 
-.autoplay {
+.responsive {
   margin-top: 50px;
   margin-bottom: 50px;
   margin: 25px auto;
@@ -686,33 +666,6 @@ background-blend-mode: initial;
     grid-row-start: 3;
     grid-row-end: 4;
   }
-
-  .ten {
-    /*background-image: url('images-css/TKRSS.png');*/
-    background-color: green;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 4;
-    grid-row-end: 5;
-  }
-
-  .eleven {
-    /*background-image: url('images-css/TKRSS.png');*/
-    background-color: green;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 4;
-    grid-row-end: 5;
-  }
-
-  .twelve {
-    /*background-image: url('images-css/TKRSS.png');*/
-    background-color: green;
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 4;
-    grid-row-end: 5;
-  }
 }
 
 @media (max-width: 1000px) {
@@ -732,22 +685,6 @@ background-blend-mode: initial;
     margin: 5px 3px 5px 3px;
   }
 
-  .service-image-div {
-    flex-direction: column;
-  }
-
-  .s-image {
-    width: 90%;
-  }
-
-  .s-descript {
-    width: 90%;
-  }
-
-  .sid-2 {
-    flex-direction: column-reverse;
-  }
-
   .portfolio-heading {
     width: 85%;
   }
@@ -755,6 +692,14 @@ background-blend-mode: initial;
   .grid-portfolio-item {
     width: 220px;
     height: 170px;
+  }
+
+  .s-descript h3 {
+    font-size: 1.5em;
+  }
+
+  .s-descript p {
+    font-size: 0.8em;
   }
 }
 
@@ -850,12 +795,20 @@ background-blend-mode: initial;
 }
 
 
+.service-image-div {
+  flex-direction: column;
+}
+
 .s-image {
   width: 95%;
 }
 
 .s-descript {
   width: 95%;
+}
+
+.sid-2 {
+  flex-direction: column-reverse;
 }
 
 
@@ -912,6 +865,14 @@ background-blend-mode: initial;
 }
 
 @media (max-width: 475px) {
+
+  .s-image {
+    width: 100%;
+  }
+
+  .s-descript {
+    width: 100%;
+  }
 
   .grid-portfolio-item {
     width: 90%;
