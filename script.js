@@ -104,6 +104,14 @@ $(window).scroll(function() {
 });
 
 
+//Popup for Services
+
+document.querySelector('.btn-s1').addEventListener('click', () => {
+document.querySelector('.s1-popup-bg').classList.toggle('s1-popup-bg-active');
+document.querySelector('.s1-popup-container').classList.toggle('s1-popup-container-active')
+	});
+
+
 //carousel
 $('.responsive').slick({
   dots: true,

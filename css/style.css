@@ -192,7 +192,7 @@ textarea {
 .header-section {
   height: 100vh;
   color: white;
-  background-image: url('images/adler-header-image-edit.png');
+  background-image: url('images/IMG_8435.jpg');
   background-position: center;
   background-size: cover;
   display: flex;
@@ -324,6 +324,53 @@ textarea {
 .s123-scroll {
   opacity: 1;
   transform: translateX(0%);
+}
+
+.s1-popup-bg {
+  display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right:0;
+	padding: 0;
+	height: 100vh;
+	width: 100%;
+	background-color: black;
+  opacity: 0.5;
+	z-index: 3;
+}
+
+.s1-popup-bg-active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.s1-popup-container {
+  display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 6;
+}
+
+.s1-popup-container-active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.s1-popup-box {
+  display: flex;
+  background-color: white;
+  height: 300px;
+  width: 500px;
+  border: solid;
+  border-width: 3px;
 }
 
 .bottom-section {
