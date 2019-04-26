@@ -1,6 +1,5 @@
 
 //PARALLAX
-
 $(window).scroll(function() {
   parallax();
 });
@@ -13,6 +12,7 @@ function parallax() {
 }
 
 
+//Smooth Scrolling Links
 $(document).ready(function() {
 
   $('.scroll').click(function(e){
@@ -30,6 +30,7 @@ $(document).ready(function(){
 });
 
 
+//Burger Menu Toggling
 document.querySelector('.burger').addEventListener('click', () => {
 document.querySelector('.nav-ul-list').classList.toggle('nav-active');
 	});
@@ -56,7 +57,7 @@ document.querySelector('.burger-exit').classList.toggle('active-exit-burger');
 
 
 
-//Scroll Animation - Navigation
+//Scroll Animation for Navigation
 $(window).scroll(function() {
   if ($(document).scrollTop() > 50) {
     $('#nav-container-box').addClass('nav-bg-scroll');
@@ -80,84 +81,54 @@ $(window).scroll(function() {
   if ($(document).scrollTop() > 300) {
     $('.s1-des, .s1-img').addClass('s123-scroll');
   }
-  else {
+  /*else {
     $('.s1-des, .s1-img').removeClass('s123-scroll');
-  }
+  }*/
 });
 
 $(window).scroll(function() {
-  if ($(document).scrollTop() > 650) {
+  if ($(document).scrollTop() > 700) {
     $('.s2-des, .s2-img').addClass('s123-scroll');
   }
-  else {
-    $('.s2-des, .s2-img').removeClass('s123-scroll');
-  }
 });
 
 $(window).scroll(function() {
-  if ($(document).scrollTop() > 1000) {
+  if ($(document).scrollTop() > 1100) {
     $('.s3-des, .s3-img').addClass('s123-scroll');
-  }
-  else {
-    $('.s3-des, .s3-img').removeClass('s123-scroll');
   }
 });
 
 
 //Popup for Services
-
+/*
 document.querySelector('.btn-s1').addEventListener('click', () => {
 document.querySelector('.s1-popup-bg').classList.toggle('s1-popup-bg-active');
-document.querySelector('.s1-popup-container').classList.toggle('s1-popup-container-active')
+document.querySelector('.s1-popup-container').classList.toggle('s1-popup-container-active');
+	});
+*/
+
+//Dropdown for Services
+
+document.querySelector('.btn-s1').addEventListener('click', () => {
+document.querySelector('.services-dropdown').classList.toggle('services-dropdown-active');
 	});
 
 
-//carousel
-$('.responsive').slick({
-  dots: true,
-  infinite: false,
-  speed: 300,
-  slidesToShow: 4,
-  slidesToScroll: 4,
-  autoplay: true,
-  autoplaySpeed: 2000,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        infinite: true,
-        dots: true
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
-  ]
+//Animation for Gallery Section
+$(window).scroll(function() {
+  if ($(document).scrollTop() > 1600) {
+    $('.one, .two, .three').addClass('grid-portfolio-item-scroll');
+  }
 });
 
+$(window).scroll(function() {
+  if ($(document).scrollTop() > 1850) {
+    $('.four, .five, .six').addClass('grid-portfolio-item-scroll');
+  }
+});
 
-
-
-/*
-$('.autoplay').slick({
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 2000,
-});*/
+$(window).scroll(function() {
+  if ($(document).scrollTop() > 2100) {
+    $('.seven, .eight, .nine').addClass('grid-portfolio-item-scroll');
+  }
+});
