@@ -197,12 +197,25 @@ textarea {
   background-size: cover;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  overflow-y: hidden;
+}
+
+.header-section-info-img {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 35px;
+  padding-right: 35px;
+  max-width: 1250px;
 }
 
 .header-section img {
-  position: absolute;
-  bottom: 0;
-  right: 50px;
+  margin-right: -75px;
+
 }
 
 .parallax--bg {
@@ -215,7 +228,6 @@ textarea {
   justify-content: center;
   height: 100%;
   max-width: 500px;
-  margin-left: 20%;
 }
 
 .header-section-info h1 {
@@ -236,6 +248,7 @@ textarea {
 }
 
 .middle-section {
+  position: relative;
   background-color: white;
   height: auto;
   max-width: 1250px;
@@ -245,6 +258,7 @@ textarea {
   justify-content: center;
   align-items: center;
   padding: 50px 35px;
+  z-index: 3;
 }
 
 .middle-section h1, .middle-section h3 {
@@ -605,8 +619,21 @@ textarea {
 
 @media (max-width: 1000px) {
 
-  .header-section-info {
+  .header-section {
+    background-image: url('images/bg-ryan-glamour-full.png');
+    background-position: top;
+    background-size: cover;
+  }
 
+  .header-section img {
+    display: none;
+  }
+
+  .header-section-info {
+    align-items: center;
+    height: 100%;
+    margin: auto;
+    padding-top: 100px;
   }
 
   .title-line {
@@ -713,23 +740,6 @@ textarea {
 .social-link-ind {
   width: 20px;
   height: 20px;
-}
-
-.header-section {
-  background-image: url('images/bg-ryan-glamour-full.png');
-  background-position: top;
-  background-size: cover;
-}
-
-.header-section img {
-  display: none;
-}
-
-.header-section-info {
-  align-items: center;
-  height: 100%;
-  margin: auto;
-  padding-top: 100px;
 }
 
 .middle-section {
