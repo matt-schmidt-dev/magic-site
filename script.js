@@ -108,18 +108,9 @@ document.querySelector('.s1-popup-container').classList.toggle('s1-popup-contain
 */
 
 //Dropdown for Services
-
-document.querySelector('.s1-btn').addEventListener('click', () => {
-document.querySelector('.services-dropdown-one').classList.toggle('services-dropdown-active');
-	});
-
   document.querySelector('.s2-btn').addEventListener('click', () => {
   document.querySelector('.services-dropdown-two').classList.toggle('services-dropdown-active');
   	});
-
-    document.querySelector('.s3-btn').addEventListener('click', () => {
-    document.querySelector('.services-dropdown-three').classList.toggle('services-dropdown-active');
-    	});
 
 
 //Animation for Gallery Section
@@ -140,3 +131,13 @@ $(window).scroll(function() {
     $('.seven, .eight, .nine').addClass('grid-portfolio-item-scroll');
   }
 });
+
+
+//Testimonial Carousel
+  $('.single-item').slick({
+    speed: 500,
+	  autoplay: true,
+    autoplaySpeed: 3500,
+    arrows: false,
+    dots: true,
+  });
