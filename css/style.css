@@ -181,12 +181,15 @@ textarea {
  }
 
  .social-link-ind {
-   width: 25px;
-   height: 25px;
    margin-top: auto;
    margin-bottom: auto;
    margin-left: 5px;
    margin-right: 5px;
+ }
+
+ .social-link-ind img {
+   width: 25px;
+   height: auto;
  }
 
 .header-section {
@@ -287,6 +290,14 @@ textarea {
 
 .ser-sect-par {
   text-align: center;
+  opacity: 0;
+  transform: translateY(50%);
+  transition: 500ms
+}
+
+.ser-sect-par-scroll {
+  opacity: 1;
+  transform: translateY(0%);
 }
 
 .services {
@@ -335,42 +346,42 @@ textarea {
 .s1-des {
   opacity: 0;
   transform: translateX(50%);
-  transition: 750ms;
+  transition: 500ms;
   margin-right: 0;
 }
 
 .s1-img {
   opacity: 0;
   transform: translateX(-50%);
-  transition: 750ms;
+  transition: 500ms;
   margin-left: 0;
 }
 
 .s2-des {
   opacity: 0;
   transform: translateX(-50%);
-  transition: 750ms;
+  transition: 500ms;
   margin-left: 0;
 }
 
 .s2-img {
   opacity: 0;
   transform: translateX(50%);
-  transition: 750ms;
+  transition: 500ms;
   margin-right: 0;
 }
 
 .s3-des {
   opacity: 0;
   transform: translateX(50%);
-  transition: 750ms;
+  transition: 500ms;
   margin-right: 0;
 }
 
 .s3-img {
   opacity: 0;
   transform: translateX(-50%);
-  transition: 750ms;
+  transition: 500ms;
   margin-left: 0;
 }
 
@@ -526,48 +537,58 @@ textarea {
   background-size: cover;
   background-position: center;
   opacity: 0;
-  transition: 750ms;
+  transform: translateY(35%);
 
 }
 
 .grid-portfolio-item-scroll {
+  transform: translateY(0%);
   opacity: 1;
 }
 
 .one {
   background-image: url('images/IMG_8417.JPG');
+  transition: 500ms ease-in-out;
 }
 
 .two {
   background-image: url('images/IMG_8421.JPG');
+  transition: 500ms ease-in-out 50ms;
 }
 
 .three {
   background-image: url('images/IMG_8425.JPG');
+  transition: 500ms ease-in-out 100ms;
 }
 
 .four {
   background-image: url('images/IMG_8420.JPG');
+  transition: 500ms ease-in-out;
 }
 
 .five {
   background-image: url('images/IMG_8428.JPG');
+  transition: 500ms ease-in-out 50ms;
 }
 
 .six {
   background-image: url('images/IMG_8418.JPG');
+  transition: 500ms ease-in-out 100ms;
 }
 
 .seven {
   background-image: url('images/IMG_8430.JPG');
+  transition: 500ms ease-in-out;
 }
 
 .eight {
   background-image: url('images/IMG_8434.JPG');
+  transition: 500ms ease-in-out 50ms;
 }
 
 .nine {
   background-image: url('images/IMG_8431.JPG');
+  transition: 500ms ease-in-out 100ms;
 }
 
 .client-section {
@@ -646,6 +667,7 @@ textarea {
   padding: 10px;
   display: flex;
   flex-direction: column;
+  background-color: black;
 }
 
 .social-media {
@@ -662,12 +684,15 @@ textarea {
 }
 
 .social-link-ind-f {
-  width: 40px;
-  height: 40px;
   margin-top: auto;
   margin-bottom: auto;
   margin-left: 5px;
   margin-right: 5px;
+}
+
+.social-link-ind-f img {
+  width: 40px;
+  height: auto;
 }
 
 /********************ID********************/
@@ -675,12 +700,12 @@ textarea {
 
 @media (max-width: 1320px) {
 
-}
+/*}
 
-@media (max-width: 1000px) {
+@media (max-width: 1000px) {*/
 
   .header-section {
-    background-image: url('images/br-ryan-sitting-bw-wide.png');
+    background-image: url('images/br-ryan-sitting-bw-widest.png');
     background-position: top;
     background-size: cover;
   }
@@ -737,6 +762,10 @@ textarea {
   }
 
   .s-descript p, .services-dropdown-two ul, .services-dropdown-two p {
+    font-size: 0.8em;
+  }
+
+  .btn {
     font-size: 0.8em;
   }
 
@@ -861,10 +890,6 @@ padding-right: 15px;
   margin-left: 5px;
   margin-right: 5px;
 }
-
-  .btn {
-    font-size: 0.8em;
-  }
 
   .cf-one {
     display: none;
