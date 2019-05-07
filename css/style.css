@@ -213,6 +213,10 @@ textarea {
   padding-right: 35px;
   max-width: 1250px;
   overflow-x: hidden;
+  position: absolute;
+  left: 5%;
+  right: 5%;
+  top: 0;
 }
 
 .this-img {
