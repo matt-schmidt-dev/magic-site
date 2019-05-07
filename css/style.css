@@ -233,6 +233,7 @@ textarea {
   justify-content: center;
   height: 100%;
   max-width: 500px;
+  color: whitesmoke;
 }
 
 .header-section-info h1 {
@@ -675,7 +676,7 @@ textarea {
 @media (max-width: 1000px) {
 
   .header-section {
-    background-image: url('images/bg-ryan-glamour-full.png');
+    background-image: url('images/br-ryan-sitting-bw-black.png');
     background-position: top;
     background-size: cover;
   }
