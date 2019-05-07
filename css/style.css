@@ -673,11 +673,11 @@ textarea {
 /********************ID********************/
 /********************Media****************/
 
-@media (max-width: 1250px) {
+@media (max-width: 1320px) {
 
-}
+/*}
 
-@media (max-width: 1000px) {
+@media (max-width: 1000px) {*/
 
   .header-section {
     background-image: url('images/br-ryan-sitting-bw-black-2.png');
