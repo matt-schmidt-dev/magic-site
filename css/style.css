@@ -192,9 +192,10 @@ textarea {
 .header-section {
   height: 100vh;
   color: white;
-  background-image: url('images/bg-header.png');
-  background-position: top;
-  background-size: cover;
+  /*background-image: url('images/bg-ryan-sitting-bw.png');*/
+  background-color: black;
+  /*background-position: top;
+  background-size: cover;*/
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -214,9 +215,8 @@ textarea {
   overflow-x: hidden;
 }
 
-.header-section img {
-  margin-right: -75px;
-
+.this-img {
+  height: 100vh;
 }
 
 .parallax--bg {
