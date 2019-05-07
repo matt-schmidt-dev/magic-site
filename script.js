@@ -8,7 +8,8 @@ function parallax() {
 
   var wScroll = $(window).scrollTop();
 
-  $('.parallax--img').css('top', 0+(wScroll*0.035)+'em');
+  $('.parallax--img').css('top', 0+(wScroll*0.025)+'em');
+
 }
 
 

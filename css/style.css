@@ -246,6 +246,10 @@ textarea {
   display: inline-block;
 }
 
+.header-section-info h1, .header-section-info h3 {
+  color: whitesmoke;
+}
+
 .header-buttons {
   display: flex;
   justify-content: center;
@@ -676,7 +680,7 @@ textarea {
 @media (max-width: 1000px) {
 
   .header-section {
-    background-image: url('images/br-ryan-sitting-bw-black.png');
+    background-image: url('images/br-ryan-sitting-bw-black-2.png');
     background-position: top;
     background-size: cover;
   }
@@ -685,12 +689,25 @@ textarea {
     display: none;
   }
 
+  .header-section-info-img {
+    position: relative;
+    left: 0;
+    right: 0;
+  }
+
+
   .header-section-info {
     align-items: center;
     height: 100%;
     margin: auto;
     padding-top: 100px;
   }
+
+  .header-section-info h1, .header-section-info h3 {
+    color: white;
+    text-shadow: 1px 1px 5px black;
+  }
+
 
   .title-line {
     background-color: #484848;
