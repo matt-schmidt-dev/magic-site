@@ -223,7 +223,7 @@ textarea {
   height: 100vh;
 }
 
-.parallax--bg {
+.parallax--hd {
 
 }
 
@@ -675,12 +675,12 @@ textarea {
 
 @media (max-width: 1320px) {
 
-/*}
+}
 
-@media (max-width: 1000px) {*/
+@media (max-width: 1000px) {
 
   .header-section {
-    background-image: url('images/br-ryan-sitting-bw-black-2.png');
+    background-image: url('images/br-ryan-sitting-bw-wide.png');
     background-position: top;
     background-size: cover;
   }
