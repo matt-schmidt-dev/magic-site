@@ -429,6 +429,10 @@ textarea {
   transition: 500ms;
 }
 
+.serv-drop-text {
+  margin-left: 15px;
+}
+
 .extended-descript ul {
 
 }
