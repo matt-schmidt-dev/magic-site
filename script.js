@@ -8,7 +8,7 @@ function parallax() {
 
   var wScroll = $(window).scrollTop();
 
-  $('.parallax--img').css('top', 0+(wScroll*0.025)+'em');
+  $('.parallax--bg').css('background-position', 'center '+(wScroll*0.75)+'px');
 
 }
 
@@ -57,6 +57,16 @@ document.querySelector('.burger-exit').classList.toggle('active-exit-burger');
     });
 
 
+//Scroll Animation for Header Info Text
+$(window).scroll(function() {
+  if ($(document).scrollTop() > 150) {
+    $('.header-section-info').addClass('header-section-info-scroll');
+  }
+  else {
+    $('.header-section-info').removeClass('header-section-info-scroll');
+  }
+});
+
 
 //Scroll Animation for Navigation
 $(window).scroll(function() {
@@ -66,6 +76,7 @@ $(window).scroll(function() {
     $('.logo-image').addClass('logo-image-scroll');
     $('.burger div').addClass('burger-scroll');
     $('.ind-nav-link').addClass('ind-nav-link-scroll');
+    $('.social-link-ind-img').addClass('social-link-img-scroll');
   }
   else {
     $('#nav-container-box').removeClass('nav-bg-scroll');

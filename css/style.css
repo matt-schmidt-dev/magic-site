@@ -192,41 +192,21 @@ textarea {
    height: auto;
  }
 
-.header-section {
-  height: 100vh;
-  color: white;
-  /*background-image: url('images/bg-ryan-sitting-bw.png');*/
-  background-color: black;
-  /*background-position: top;
-  background-size: cover;*/
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  overflow-y: hidden;
+
+ .header-section {
+   background-image: url('images/br-ryan-sitting-bw-widest.png');
+   background-position: top;
+   background-size: cover;
+   height: 100vh;
+   color: white;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   overflow-y: hidden;
 }
 
-.header-section-info-img {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 35px;
-  padding-right: 35px;
-  max-width: 1250px;
-  overflow-x: hidden;
-  position: absolute;
-  left: 5%;
-  right: 5%;
-  top: 0;
-}
 
-.this-img {
-  height: 100vh;
-}
-
-.parallax--hd {
+.parallax--bg {
 
 }
 
@@ -234,9 +214,17 @@ textarea {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   height: 100%;
   max-width: 500px;
-  color: whitesmoke;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  transition: 750ms;
+}
+
+.header-section-info-scroll {
+  opacity: 0;
 }
 
 .header-section-info h1 {
@@ -251,6 +239,7 @@ textarea {
 
 .header-section-info h1, .header-section-info h3 {
   color: whitesmoke;
+  text-shadow: 1px 1px 1px;
 }
 
 .header-buttons {
@@ -280,7 +269,7 @@ textarea {
 .title-line {
   background-color: #484848;
   height: 5px;
-  width: 200px;
+  width: 100px;
   margin-bottom: 50px;
 }
 
@@ -406,7 +395,6 @@ textarea {
 
 .services-dropdown-two {
   display: flex;
-  flex-direction: column;
   justify-content: space-around;
   align-items: center;
   background-color: whitesmoke;
@@ -415,7 +403,7 @@ textarea {
   transform: translateY(-75%);
   height: 0;
   opacity: 0;
-  transition: 500ms;
+  transition: 0ms;
 }
 
 /*
@@ -439,6 +427,7 @@ textarea {
   transform: translateY(0);
   height: auto;
   opacity: 1;
+  transition: 500ms;
 }
 
 .extended-descript ul {
@@ -578,6 +567,7 @@ textarea {
 
 .seven {
   background-image: url('images/IMG_8430.JPG');
+  background-position: top;
   transition: 500ms ease-in-out;
 }
 
@@ -691,9 +681,41 @@ textarea {
 }
 
 .social-link-ind-f img {
-  width: 40px;
+  width: 25px;
   height: auto;
 }
+
+.social-link-ind-f img:hover {
+  opacity: 0.7;
+}
+
+.nav-footer {
+  margin: 5px auto;
+}
+
+.nav-ul-list-f {
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+}
+
+.nav-item-f {
+  margin: 5px;
+  list-style: none;
+  letter-spacing: 1.5px;
+}
+
+.ind-nav-link-f {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.ind-nav-link-f:hover {
+  text-decoration: none;
+  color: whitesmoke;
+  opacity: 0.7;
+}
+
 
 /********************ID********************/
 /********************Media****************/
@@ -703,12 +725,6 @@ textarea {
 /*}
 
 @media (max-width: 1000px) {*/
-
-  .header-section {
-    background-image: url('images/br-ryan-sitting-bw-widest.png');
-    background-position: top;
-    background-size: cover;
-  }
 
   .header-section img {
     display: none;
@@ -844,9 +860,9 @@ textarea {
   opacity: 0;
 }
 
-.social-link-ind {
+.social-link-ind img {
   width: 20px;
-  height: 20px;
+  height: auto;
 }
 
 .middle-section {
@@ -856,6 +872,14 @@ padding-right: 15px;
 
 .service-image-div {
   flex-direction: column;
+}
+
+.services-dropdown-two {
+  flex-direction: column;
+}
+
+.serv-drop-text {
+  padding: 15px;
 }
 
 .s-image {
@@ -908,6 +932,15 @@ padding-right: 15px;
   .client-logos {
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  .social-link-ind-f img {
+    width: 20px;
+    height: auto;
+  }
+
+  .nav-item-f {
+    font-size: 0.8em;
   }
 }
 
