@@ -238,9 +238,9 @@ textarea {
 }
 
 .header-section-info h1, .header-section-info h3 {
-  color: whitesmoke;
-  text-shadow: 1px 1px 1px;
-}
+    color: white;
+    text-shadow: 1px 1px 5px black;
+ }
 
 .header-buttons {
   display: flex;
@@ -743,12 +743,6 @@ textarea {
     margin: auto;
     padding-top: 100px;
   }
-
-  .header-section-info h1, .header-section-info h3 {
-    color: white;
-    text-shadow: 1px 1px 5px black;
-  }
-
 
   .title-line {
     background-color: #484848;
