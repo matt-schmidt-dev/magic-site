@@ -89,7 +89,6 @@ $(window).scroll(function() {
 
 
 //Scroll Animation for Services Section
-
 $(window).scroll(function() {
   if ($(document).scrollTop() > 300) {
     $('.ser-sect-par').addClass('ser-sect-par-scroll');
@@ -106,13 +105,19 @@ $(window).scroll(function() {
 });
 
 $(window).scroll(function() {
-  if ($(document).scrollTop() > 950) {
+  if ($(document).scrollTop() > 900) {
     $('.s2-des, .s2-img').addClass('s123-scroll');
   }
 });
 
 $(window).scroll(function() {
-  if ($(document).scrollTop() > 1250) {
+  if ($(document).scrollTop() > 1350) {
+    $('.services-dropdown-two').addClass('services-dropdown-active');
+  }
+});
+
+$(window).scroll(function() {
+  if ($(document).scrollTop() > 1800) {
     $('.s3-des, .s3-img').addClass('s123-scroll');
   }
 });
@@ -127,26 +132,28 @@ document.querySelector('.s1-popup-container').classList.toggle('s1-popup-contain
 */
 
 //Dropdown for Services
+/*
   document.querySelector('.s2-btn').addEventListener('click', () => {
   document.querySelector('.services-dropdown-two').classList.toggle('services-dropdown-active');
-  	});
+});
+*/
 
 
 //Animation for Gallery Section
 $(window).scroll(function() {
-  if ($(document).scrollTop() > 1700) {
+  if ($(document).scrollTop() > 2250) {
     $('.one, .two, .three').addClass('grid-portfolio-item-scroll');
   }
 });
 
 $(window).scroll(function() {
-  if ($(document).scrollTop() > 1950) {
+  if ($(document).scrollTop() > 2500) {
     $('.four, .five, .six').addClass('grid-portfolio-item-scroll');
   }
 });
 
 $(window).scroll(function() {
-  if ($(document).scrollTop() > 2200) {
+  if ($(document).scrollTop() > 2750) {
     $('.seven, .eight, .nine').addClass('grid-portfolio-item-scroll');
   }
 });
@@ -160,3 +167,45 @@ $(window).scroll(function() {
     arrows: false,
     dots: true,
   });
+
+
+
+//Contact Form Submission
+$(document).ready(function () {
+  $('.submit').click(function (event) {
+    console.log('Clicked Button')
+
+    var name = $('.name').val()
+    var email = $('.email').val()
+    var message = $('.message').val()
+    var statusElm = $('.status')
+    statusElm.empty()
+
+    if(email.length > 5 && email.includes('@') && email.includes('.')) {
+      statusElm.append('<div>Email is valid</div>')
+    } else {
+      event.preventDefault()
+      statusElm.append('<div>Email is not valid</div>')
+    }
+  })
+});
+
+
+$(document).ready(function () {
+  $('.submit-mobile').click(function (event) {
+    console.log('Clicked Button')
+
+    var nameM = $('.name-mobile').val()
+    var emailM = $('.email-mobile').val()
+    var messageM = $('.message-mobile').val()
+    var statusElmM = $('.status-mobile')
+    statusElm.empty()
+
+    if(emailM.length > 5 && emailM.includes('@') && emailM.includes('.')) {
+      statusElmM.append('<div>Email is valid</div>')
+    } else {
+      event.preventDefault()
+      statusElmM.append('<div>Email is not valid</div>')
+    }
+  })
+})

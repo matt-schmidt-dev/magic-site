@@ -3,8 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Matt Schmidt | Web Developer</title>
-  <link rel="icon" type="img/jpg" href="images/profilesmall.png">
+  <title>Ryan Adler | Magician & Illusionist</title>
+  <link rel="icon" type="img/jpg" href="">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
@@ -56,10 +56,10 @@
           </ul>
         </div>
         <div class="social-links">
-          <a class="social-link-ind" href="https://www.facebook.com/LibertyTalksPodcast/"><img  src="images/facebook.png" alt="LTP-Facebook"></a>
-          <a class="social-link-ind" href="https://twitter.com/LibertyTalksPod"><img src="images/twitter.png" alt="LTP-Twitter"></a>
-          <a class="social-link-ind" href="https://www.instagram.com/libertytalkspodcast/"><img src="images/instagram.png" alt="LTP-Instagram"></a>
-          <a class="social-link-ind" href="https://www.youtube.com/user/michael13anderson"><img src="images/youtube.png" alt="LTP-Youtube"></a>
+          <a class="social-link-ind" href=""><img  src="images/facebook.png" alt="LTP-Facebook"></a>
+          <a class="social-link-ind" href=""><img src="images/twitter.png" alt="LTP-Twitter"></a>
+          <a class="social-link-ind" href=""><img src="images/instagram.png" alt="LTP-Instagram"></a>
+          <a class="social-link-ind" href=""><img src="images/youtube.png" alt="LTP-Youtube"></a>
         </div>
       </nav>
     </div>
@@ -106,9 +106,6 @@
             <p>This format is presented to an entire group simultaneously and is usually done in a: home, school, banquet room, or outdoor/picnic area. Engagements are customized for each client to include themes or highlight the special occasion.
               The audience is always involved!</p>
             <p>Performances run between 30-45 minutes depending on the client’s needs, can involve an assistant, and may incorporate some furry friends.</p>
-            <div class="service-buttons">
-              <button class="btn btn-outline-dark s2-btn">Children's Parties Info Here</button>
-            </div>
           </div>
           <img class="s-image s2-img" src="images/parlor-magic.jpg" alt="">
         </div>
@@ -116,7 +113,7 @@
 
       <!--Dropdown Option for Service Two-->
       <div class="services-dropdown-two">
-        <img class="s-image s3-img" src="images/kids party collage.png" alt="">
+        <img class="s-image s2-img" src="images/kids party collage.png" alt="">
         <div class="serv-drop-text">
           <h3>Children's Parties</h3>
           <p><i>Engagements Start at $250.00</i></p>
@@ -247,26 +244,28 @@
       <div class="title-line">
       </div>
       <p>Fill out the form to request more inforamtion about booking an event.</p>
-      <form class="contact-form cf-one" action="index.html">
-        <input type="text" name="Name" placeholder="Name" size="50" required>
-        <input type="email" name="Email" placeholder="Email" size="50" required>
-        <textarea type="text" name="Message" placeholder="Message" cols="51" rows="10" required></textarea>
-        <input type="submit" value="Send Message" class="btn btn-outline-dark">
+      <form id="name-form" class="contact-form cf-one" action="https://formspree.io/ryanmadler@gmail.com" method="POST">
+        <input class="name" type="text" name="Name" placeholder="Name" size="50" required>
+        <input class="email" type="email" name="Email" placeholder="Email" size="50" required>
+        <textarea class="message" type="text" name="Message" placeholder="Message" cols="51" rows="10" required></textarea>
+        <div class="status"></div>
+        <input class="submit btn btn-outline-dark" type="submit" value="Send Message">
       </form>
-      <form class="contact-form cf-two" action="index.html">
-        <input type="text" name="Name" placeholder="Name" size="35" required>
-        <input type="email" name="Email" placeholder="Email" size="35" required>
-        <textarea type="text" name="Message" placeholder="Message" cols="36" rows="10" required></textarea>
-        <input type="submit" value="Send Message" class="btn btn-outline-dark">
+      <form id="name-form-mobile" class="contact-form cf-two" action="https://formspree.io/ryanmadler@gmail.com" method="POST">
+        <input class="name-mobile" type="text" name="Name" placeholder="Name" size="35" required>
+        <input class="email-mobile" type="email" name="Email" placeholder="Email" size="35" required>
+        <textarea class="message-mobile" type="text" name="Message" placeholder="Message" cols="36" rows="10" required></textarea>
+        <div class="status-mobile"></div>
+        <input class="submit-mobile btn btn-outline-dark" type="submit" value="Send Message">
       </form>
     </div>
     <div class="footer-section">
-      <div class="social-media">
+      <!--<div class="social-media">
         <a class="social-link-ind-f" href="https://www.facebook.com/LibertyTalksPodcast/"><img src="images/facebook.png" alt="LTP-Facebook"></a>
         <a class="social-link-ind-f" href="https://twitter.com/LibertyTalksPod"><img src="images/twitter.png" alt="LTP-Twitter"></a>
         <a class="social-link-ind-f" href="https://www.instagram.com/libertytalkspodcast/"><img src="images/instagram.png" alt="LTP-Instagram"></a>
         <a class="social-link-ind-f" href="https://www.youtube.com/user/michael13anderson"><img src="images/youtube.png" alt="LTP-Youtube"></a>
-      </div>
+      </div>-->
       <nav class="nav-footer">
         <ul class="nav-ul-list-f">
           <li class="nav-item-f">

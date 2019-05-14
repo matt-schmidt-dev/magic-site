@@ -178,6 +178,7 @@ textarea {
 
  .social-links {
   display: flex;
+  visibility: hidden;
  }
 
  .social-link-ind {
@@ -198,7 +199,6 @@ textarea {
    background-position: top;
    background-size: cover;
    height: 100vh;
-   color: white;
    display: flex;
    align-items: center;
    justify-content: space-between;
@@ -238,9 +238,9 @@ textarea {
 }
 
 .header-section-info h1, .header-section-info h3 {
-    color: white;
-    text-shadow: 1px 1px 5px black;
- }
+  color: whitesmoke;
+  text-shadow: -2px 2px 5px black;
+}
 
 .header-buttons {
   display: flex;
@@ -427,11 +427,7 @@ textarea {
   transform: translateY(0);
   height: auto;
   opacity: 1;
-  transition: 500ms;
-}
-
-.serv-drop-text {
-  margin-left: 15px;
+  transition: 750ms;
 }
 
 .extended-descript ul {
@@ -528,7 +524,7 @@ textarea {
 
 .grid-portfolio-item {
   background-size: cover;
-  background-position: center;
+  background-position: top;
   opacity: 0;
   transform: translateY(35%);
 
@@ -566,6 +562,7 @@ textarea {
 
 .six {
   background-image: url('images/IMG_8418.JPG');
+  background-position: center;
   transition: 500ms ease-in-out 100ms;
 }
 
@@ -747,6 +744,7 @@ textarea {
     margin: auto;
     padding-top: 100px;
   }
+
 
   .title-line {
     background-color: #484848;
